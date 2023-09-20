@@ -5,7 +5,7 @@ const hoverBackgroundColor='rgba(0, 123, 255, 0.7)'
  const borderColor='rgba(75, 192, 192, 0.2)'
  const border='1px solid rgba(0, 123, 255, 0.7)'
  const height='200px'
-// Function to create and animate the bar chart
+
 function createBarChart() {
     const ctx = document.getElementById('barChart').getContext('2d');
 
@@ -33,7 +33,7 @@ function createBarChart() {
 
     const barChart = new Chart(ctx, config);
 
-    // Animate the bar chart using Anime.js
+ 
    const animation= anime({
         targets: barChart.data.datasets[0].data,
         duration: 1000,
@@ -46,5 +46,5 @@ function createBarChart() {
     });
 }
 
-// Create and animate the bar chart
+
 createBarChart();
